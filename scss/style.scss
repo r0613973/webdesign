@@ -12,10 +12,54 @@
 @import "specifiekjens";
 @import "specifiekrobin";
 
-
+#navigatiebalk {
+  color: white;
+  background-color: grey;
+  margin-bottom: 0px;
+}
 
 #container {
+  width: auto;
   margin: 30px;
-  display: flex;
-  flex-direction: row;
+
+  border: 3px solid grey;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: $smallscherm) {
+  @include opmaak(grey,18px);
+
+}
+
+@media screen and (min-width:$mediumscherm) {
+  @include opmaak(yellow,24px);
+}
+
+@media screen and (min-width:$largescherm) {
+  @include opmaak(green,24px);
+  #container {
+    display: flex;
+    flex-direction: row;
+  }
+  #jens {
+    width: 50%;
+    height: 50%;
+
+  }
+
+  #robin {
+     width: 50%;
+     height: 50%;
+   }
+}
+h2 {
+  text-align: center;
+}
+
+img {
+  margin: 20px;
+  border-radius: 5px 5px 5px 5px ;
+
 }
