@@ -3,12 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
 
-$h1font: 'Passion One', cursive;
+$headersfont: 'Passion One', cursive;
 $pfont: 'PT Sans Narrow', sans-serif;
 
 
-h1 {
-  font-family: $h1font;
+
+
+
+
+
+h1,h2,h3,h4 {
+  font-family: $headersfont;
 }
 p {
   font-family: $pfont;
