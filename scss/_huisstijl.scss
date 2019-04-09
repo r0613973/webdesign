@@ -18,10 +18,6 @@ p {
 
 }
 
-header h1,h2 {
-  text-align: center;
-  justify-content: center;
-}
 
 #headafb {
   max-width: 100%;
@@ -31,6 +27,8 @@ header h1,h2 {
 footer {
   text-align: center;
   color: white;
+  height: 35px;
+
 }
 nav a {
   list-style-type: none;
