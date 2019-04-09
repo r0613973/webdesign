@@ -29,7 +29,12 @@
 
 
 @media screen and (min-width: $smallscherm) {
-  @include opmaak(grey,18px);
+
+
+  #container {
+    @include opmaak(grey,18px);
+  }
+  text-align: center;
 
 }
 
@@ -42,6 +47,7 @@
   #container {
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
   #jens {
     width: 50%;
@@ -54,11 +60,16 @@
      height: 50%;
    }
 }
-h2 {
-  text-align: center;
+
+
+#nr2 {
+  margin: 20px;
+  border-radius: 5px 5px 5px 5px ;
+
 }
 
-img {
+
+#nr1 {
   margin: 20px;
   border-radius: 5px 5px 5px 5px ;
 

@@ -6,6 +6,8 @@
 $headersfont: 'Passion One', cursive;
 $pfont: 'PT Sans Narrow', sans-serif;
 $fontgroote:20px;
+$kleurgrijs: #C1C1B2;
+$kleurgeel: #FFFF41;
 
 h1,h2,h3,h4 {
   font-family: $headersfont;
@@ -13,35 +15,33 @@ h1,h2,h3,h4 {
 }
 p {
   font-family: $pfont;
+
 }
 
-#ondernav {
-  background: linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-  linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-  background-color:#708090;
-  background-size: 64px 128px;
+header h1,h2 {
   text-align: center;
-  margin-top: 0px;
-  columns: $kleurgeel;
+  justify-content: center;
 }
-#ondernav h2 {
-  padding-bottom: 20px;
+
+#headafb {
+  max-width: 100%;
+  margin: auto;
 }
 
 footer {
   text-align: center;
-  background-color: $kleurgrijs;
-  color: black;
+  color: white;
 }
-
 nav a {
   list-style-type: none;
   text-decoration: none;
 
 
+
   &:hover {
     text-decoration: underline;
-    color: desaturate(black, 50%);
+
+    color: yellow;
   }
 
   &:active {
@@ -49,3 +49,4 @@ nav a {
     background-color: inherit;
   }
 }
+
