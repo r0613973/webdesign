@@ -12,10 +12,30 @@
 @import "specifiekjens";
 @import "specifiekrobin";
 
-#navigatiebalk {
+
+nav {
   color: white;
-  background-color: grey;
+  background-color: $kleurgrijs;
   margin-bottom: 0px;
+
+
+  a {
+    list-style-type: none;
+    text-decoration: none;
+    color: $kleurgeel;
+    background-color: $kleurgrijs;
+
+    &:hover {
+      text-decoration: underline;
+
+      color: yellow;
+    }
+  }
+}
+
+footer {
+  color: white;
+  background-color: $kleurgrijs;
 }
 
 #container {

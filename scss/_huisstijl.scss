@@ -30,21 +30,5 @@ footer {
   height: 35px;
 
 }
-nav a {
-  list-style-type: none;
-  text-decoration: none;
 
-
-
-  &:hover {
-    text-decoration: underline;
-
-    color: yellow;
-  }
-
-  &:active {
-    color: $kleurgeel;
-    background-color: inherit;
-  }
-}
 
