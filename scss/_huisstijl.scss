@@ -6,8 +6,10 @@
 $headersfont: 'Passion One', cursive;
 $pfont: 'PT Sans Narrow', sans-serif;
 $fontgroote:20px;
-$kleurgrijs: #C1C1B2;
-$kleurgeel: #FFFF41;
+$basiskleur:#00739a;
+$basiskleur2:#F4F42A;
+
+
 
 h1,h2,h3,h4 {
   font-family: $headersfont;
@@ -27,8 +29,32 @@ p {
 footer {
   text-align: center;
   color: white;
+  background-color: $basiskleur;
   height: 35px;
+
 
 }
 
+footer a {
+  color: $basiskleur2;
+  background-color: inherit;
+
+
+  &:hover {
+    text-decoration: underline;
+    color: $basiskleur2;
+    background-color: inherit;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: invert($basiskleur2,25%);
+    background-color: inherit;
+  }
+
+  &:focus {
+    color: $basiskleur2;
+    background-color: inherit;
+  }
+}
 

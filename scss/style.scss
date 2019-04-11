@@ -12,31 +12,39 @@
 @import "specifiekjens";
 @import "specifiekrobin";
 
-
 nav {
   color: white;
-  background-color: $kleurgrijs;
+  background-color: $basiskleur;
   margin-bottom: 0px;
 
 
   a {
     list-style-type: none;
-    text-decoration: none;
-    color: $kleurgeel;
-    background-color: $kleurgrijs;
+
+    color: white;
+    background-color: $basiskleur;
 
     &:hover {
       text-decoration: underline;
 
-      color: yellow;
+      color: $basiskleur2;
+      background-color: inherit;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color:invert($basiskleur2,100%);
+      background-color: $basiskleur;
+    }
+
+    &:focus {
+
+      color: $basiskleur2;
+      background-color: inherit;
     }
   }
 }
 
-footer {
-  color: white;
-  background-color: $kleurgrijs;
-}
 
 #container {
   width: auto;
@@ -69,16 +77,8 @@ footer {
     flex-direction: row;
     text-align: center;
   }
-  #jens {
-    width: 50%;
-    height: 50%;
 
-  }
 
-  #robin {
-     width: 50%;
-     height: 50%;
-   }
 }
 
 
