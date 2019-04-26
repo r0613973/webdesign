@@ -1,82 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <title>Game Duck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <meta name="author" content="Jens Lambrechts & Robin Swolfs">
+
+
     <link rel="stylesheet" href="css/style.css">
-    <title>1ITF Sass BS4 project</title>
+
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>Sass - Bootstrap 4
-            <small class="text-muted">project 1ITF</small>
-        </h1>
-        <hr class="mb-4">
-    </header>
-    <div class="row">
-        <div class="col-lg-4 col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, aliquid corporis deserunt eos
-                exercitationem explicabo id molestiae nemo perspiciatis quasi ut vero voluptatibus?
-                Ducimus enim
-                expedita
-                reprehenderit sit veritatis.
+<header>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">SVG logo</a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="jenspagina1.html">Wat zijn consoles?</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="jenspagina2.html">Evolutie consoles</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="robinpagina3.html">Bekendste bedrijven</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="robinpagina4.html">populairsteste bedrijven</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <figure>
+        <img id="headafb" src="Afbeeldingen/banner.jpg" class="card-img" alt="nintendo afb">
+    </figure>
+
+</header>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1 class="text-center">Welkom in de wondere wereld van gameconsoles!</h1>
+                <h4 class="text-center">Consoles zijn toch wel iets speciaals. Al decennia lang zijn ze vast meubilair in onze woonkamers.
+                    Consoles zijn veel veranderd over de jaren heen. Het blijft soms moeilijk om bij te blijven met al die nieuwe functionaliteiten.
+                    Zo is de concurrentie stevig gegroeid en is de markt groter dan ooit. Wist je bv. dat </h4>
+            </div>
+
+        </div>
+        <h2 class="section-heading text-center" >Consoles in alle maten</h2>
+        <div class="row">
+
+            <div class="col-lg-6 my-auto text-center">
+
+            <img id="nr1" src="Afbeeldingen/indexfoto1.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="col-lg-6 my-auto text-center">
+            <p>Hier tekst best de eerste afbeelding links en dan de andere afbeelding rechts en links tekst
             </p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="alert alert-primary">
-                This is a primary alert
-                <button type="button" class="close" data-dismiss="alert">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="alert alert-danger">
-                This is a danger alert
-                <button type="button" class="close" data-dismiss="alert">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="alert alert-success">
-                This is a success alert
-                <button type="button" class="close" data-dismiss="alert">
-                    <span>&times;</span>
-                </button>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-            <button type="button" class="btn btn-primary btn-block" data-toggle="tooltip" data-placement="top"
-                    title="Tooltip on top"><i class="fas fa-home"></i> Home
-            </button>
-            <button type="button" class="btn btn-danger btn-block"><i class="fas fa-users"></i> Users</button>
-            <button type="button" class="btn btn-outline-success btn-block" data-toggle="modal"
-                    data-target="#imageModal"><i
-                    class="fas fa-image"></i> Image modal
-            </button>
+        <div class="row">
+            <div class="col-lg-6 my-auto text-center order-2">
+            <img id="nr2" src="Afbeeldingen/indexfoto2.jpg" alt=""  width="200px" height="200px">
+            </div>
+            <div class="col-lg-6 my-auto text-center order-1">
+            <p>
+               Hier tekst
+            </p>
+            </div>
         </div>
+
     </div>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="imageModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Random image</h5>
-            </div>
-            <div class="modal-body">
-                <img src="https://placeimg.com/600/337/nature" class="img-fluid" alt="Random image">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+    <footer class="col-lg-12">
+        <a href="https://www.thomasmore.be/">Thomas More</a>  1 ITF | Auteurs: Jens Lambrechts & Robin Swolfs
+    </footer>
+    <!-- JS: jQuery, Bootstrap, new-age -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/new-age.min.js"></script>
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<!--custom scripts-->
 </body>
 </html>
