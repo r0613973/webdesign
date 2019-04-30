@@ -1,6 +1,3 @@
-
-
-
 @mixin opmaak($kleur,$grootte) {
   color: black;
   background-color: $basiskleur;
@@ -8,5 +5,4 @@
   line-height: $fontgroote *1.5;
   margin: $fontgroote;
   padding: $fontgroote;
-
 }
