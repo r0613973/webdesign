@@ -1,0 +1,6 @@
+@import "mixins";
+@import "huisstijl";
+
+.pagina3kolom {
+  @include opmaakkolompagina3;
+}

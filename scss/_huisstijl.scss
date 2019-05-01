@@ -1,13 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css?family=Passion+One');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import "mixins";
 
 
 $headersfont: 'Passion One', cursive;
 $pfont: 'PT Sans Narrow', sans-serif;
 $fontgroote:20px;
 $basiskleur:#00739a;
-$basiskleur2:#F4F42A;
+$basiskleur2:#F3EA7D;
 
 
 #headafb2 {
@@ -72,4 +72,5 @@ footer a {
     background-color: inherit;
   }
 }
+
 
