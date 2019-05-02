@@ -4,3 +4,8 @@
 .pagina3kolom {
   @include opmaakkolompagina3;
 }
+
+.knop {
+  background-color: $basiskleur;
+  color: white;
+}
