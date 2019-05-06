@@ -11,8 +11,7 @@
   color: white;
   background-color: $basiskleur2;
   font-size: $fontgroote;
-  margin: 2px;
-  padding: 2px;
+  margin-bottom: 40px;
 }
 
 @mixin opmaakaccordeonpagina4() {
@@ -20,4 +19,9 @@
   color: white;
   margin-top: 20px;
 
+}
+
+@mixin pagina3tekst {
+  font-size: 16px;
+  font-family: $pfont;
 }
