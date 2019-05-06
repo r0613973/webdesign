@@ -14,3 +14,10 @@
   margin: 2px;
   padding: 2px;
 }
+
+@mixin opmaakaccordeonpagina4() {
+  background-color: $basiskleur2;
+  color: white;
+  margin-top: 20px;
+
+}

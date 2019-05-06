@@ -15,3 +15,7 @@
   color: black;
   border: none;
 }
+
+.pagina4accordeon {
+  @include opmaakaccordeonpagina4;
+}
