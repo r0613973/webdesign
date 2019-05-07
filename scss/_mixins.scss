@@ -21,7 +21,16 @@
 
 }
 
+
 @mixin pagina3tekst {
   font-size: 16px;
   font-family: $pfont;
+}
+
+@mixin opmaakcardspagina2() {
+  background-color: $basiskleur2;
+  color: $basiskleur;
+  border: 5px solid $basiskleur2;
+  margin: 5px;
+
 }

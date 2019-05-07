@@ -1,0 +1,19 @@
+@import "mixins";
+@import "huisstijl";
+
+
+.cardsconsoles {
+  @include opmaakcardspagina2;
+}
+
+figure {
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+
+}
+
+.figure-caption {
+  color: $basiskleur;
+  font-size: 20px;
+  font-weight: bold;
+}
