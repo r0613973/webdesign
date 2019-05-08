@@ -23,3 +23,22 @@
 .pagina3tekst {
   @include pagina3tekst;
 }
+
+.landschap {
+  background-image: url(/public_html/Afbeeldingen/AchtergrondAnimatieRobin.png);
+  height: 150px;
+  width: 175px;
+}
+
+.transistionrobin {
+  display: inline-block;
+  transition: color 1s linear, transform 2s ease-in 1s;
+
+  &:hover {
+  transform: scale(0.5) rotate(180deg) skewX(50deg);
+}
+}
+
+
+
+
