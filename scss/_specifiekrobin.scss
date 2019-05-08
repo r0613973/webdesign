@@ -24,10 +24,32 @@
   @include pagina3tekst;
 }
 
+.gameboy {
+  background-image: url(../Afbeeldingen/AnimatieGameboyRobin.jpg);
+  background-repeat: no-repeat;
+}
+
 .landschap {
-  background-image: url(/public_html/Afbeeldingen/AchtergrondAnimatieRobin.png);
+  background-image: url(../Afbeeldingen/AchtergrondAnimatieRobin.png);
+  background-repeat: repeat-x;
   height: 150px;
   width: 175px;
+}
+
+@keyframes beweeg {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.bewegend {
+  animation-name: beweeg;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .transistionrobin {

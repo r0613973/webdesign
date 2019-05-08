@@ -1,17 +1,17 @@
-
 @import "huisstijl";
 @import "mixins";
 
 
-// Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Custom code/partials
+
 @import "basisopmaak";
 
 
 @import "specifiekrobin";
 @import "specifiekjens";
+
+
 nav{
   color: white;
   background-color: $basiskleur;
