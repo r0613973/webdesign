@@ -32,13 +32,21 @@
 
 .transistionrobin {
   display: inline-block;
-  transition: color 1s linear, transform 2s ease-in 1s;
+  transition: color 1s linear, transform 1s ease-in 1s;
 
   &:hover {
   transform: scale(0.5) rotate(180deg) skewX(50deg);
 }
 }
 
+.paddingpagina3 {
+  @include paddingcardspagina3;
+}
+
+.footerpagina4 {
+  position: absolute;
+  bottom: 0;
+}
 
 
 

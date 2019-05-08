@@ -32,5 +32,8 @@
   color: $basiskleur;
   border: 5px solid $basiskleur2;
   margin: 5px;
+}
 
+@mixin paddingcardspagina3() {
+  padding-bottom: 10px;
 }
