@@ -26,14 +26,19 @@
 
 .gameboy {
   background-image: url(../Afbeeldingen/AnimatieGameboyRobin.jpg);
+  width: 500px;
+  height: 500px;
   background-repeat: no-repeat;
 }
 
 .landschap {
-  background-image: url(../Afbeeldingen/AchtergrondAnimatieRobin.png);
+  background-image: url(../Afbeeldingen/Achtergrond.png);
   background-repeat: repeat-x;
   height: 150px;
   width: 175px;
+  position: absolute;
+  top: 155px;
+  left: 165px;
 }
 
 @keyframes beweeg {
@@ -69,6 +74,11 @@
   position: absolute;
   bottom: 0;
 }
+
+.titelspagina3 {
+  @include titelspagina4;
+}
+
 
 
 
