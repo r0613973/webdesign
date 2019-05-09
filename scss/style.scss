@@ -63,11 +63,14 @@ nav{
     @include opmaak(grey,18px);
   }
   text-align: center;
-
+  #P1jens, #P2jens {
+    display: none;
+  }
 }
 
 @media screen and (min-width:$mediumscherm) {
   @include opmaak(yellow,24px);
+
 }
 
 @media screen and (min-width:$largescherm) {
