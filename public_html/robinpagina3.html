@@ -118,7 +118,7 @@
                     <h2 class="display-5">Microsoft</h2>
                     <p class="lead">The innovative minds</p>
                     <figure>
-                        <img src="Afbeeldingen/xbox.png" height="100" width="300" class="paddingpagina3">
+                        <img src="Afbeeldingen/xbox.png" height="100" width="250" class="paddingpagina3">
                     </figure>
                     <p>
                         <button class="btn knop" type="button" data-toggle="collapse" data-target="#collapse3"
@@ -229,5 +229,16 @@
 <!-- JS: jQuery, Bootstrap, new-age -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('button').hover(function(){
+            $(this).parent().siblings('h2').css('text-decoration', 'underline')},
+                function(){
+                    $(this).parent().siblings('h2').css('text-decoration', 'none');
+        });
+    });
+</script>
 </body>
 </html>
