@@ -75,55 +75,70 @@ figure {
 }
 
 
-#tabs ul li {
 
 
-  &:active {
-    color:$basiskleur2;
-    background-color: inherit;
+
+.kleuren {
+
+  border: 1px solid $basiskleur;
+
+  &:link {
+    color: black !important;
+    background-color: whitesmoke !important;
+    outline-color: $basiskleur !important;
+  }
+  &:focus {
+    color: $basiskleur2 !important;
+    background-color: $basiskleur !important;
+    outline-color: $basiskleur !important;
 
   }
   &:hover {
-    color: $basiskleur2;
+    background-color: $basiskleur !important;
+    color: $basiskleur2 !important;
+    outline-color: $basiskleur !important;
+
+  }
+
+  &active {
+    background-color: $basiskleur !important;
+    color: $basiskleur2 !important;
+    outline-color: $basiskleur !important;
+
   }
 
 }
 
 
+
+
 #animatie {
-  background-color: inherit;
-  background-repeat: repeat-x;
+  font-size: 25px;
   animation-name: verkleuring;
   animation-duration: 5s ;
-  overflow: hidden;
-  font-size: 25px;
+  animation-delay: 1s;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+  overflow: hidden;
   @keyframes verkleuring {
     0% {color: $basiskleur;
       transform: translateX(0%);}
     25% {
       color: yellowgreen;
-      transform: translateX(25%);}
+      transform: translateX(20%);}
     50% {
      color:  greenyellow;
-      transform: translateX(50%);}
+      transform: translateX(40%);}
     75% {
       color: lightgoldenrodyellow;
-      transform: translateX(75%);}
+      transform: translateX(60%);}
     100% {color:$basiskleur2;
-      transform: translateX(100%);}
+      transform: translateX(80%);}
 
 
 
   }
 
   }
-  .geheel {
-    animation-name: glijden;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-  }
+

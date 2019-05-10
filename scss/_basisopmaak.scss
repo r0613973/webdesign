@@ -67,14 +67,13 @@ footer a {
 
 
 @media screen and (min-width: $smallscherm) {
-
-
   #container {
     @include opmaak(grey,18px);
   }
   text-align: center;
   #P1jens, #P2jens {
     display: none;
+
   }
 }
 
