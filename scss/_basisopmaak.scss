@@ -1,6 +1,153 @@
-$largescherm: 1200px;
-$mediumscherm: 800px;
-$smallscherm: 400px;
+
+nav{
+  color: white;
+  background-color: $basiskleur;
+  margin-bottom: 0px;
+
+
+  a {
+    list-style-type: none;
+
+    color: white;
+    background-color: $basiskleur;
+
+    &:hover {
+      text-decoration: underline;
+
+      color: $basiskleur2;
+      background-color: inherit;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color:invert($basiskleur2,100%);
+      background-color: $basiskleur;
+    }
+
+    &:focus {
+
+      color: $basiskleur2;
+      background-color: inherit;
+    }
+  }
+}
+footer a {
+  color: $basiskleur2;
+  background-color: inherit;
+
+
+  &:hover {
+    text-decoration: underline;
+    color: $basiskleur2;
+    background-color: inherit;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: invert($basiskleur2,25%);
+    background-color: inherit;
+  }
+
+  &:focus {
+    color: $basiskleur2;
+    background-color: inherit;
+  }
+}
+
+
+
+#container {
+  width: auto;
+  margin: 30px;
+
+  border: 3px solid grey;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: $smallscherm) {
+
+
+  #container {
+    @include opmaak(grey,18px);
+  }
+  text-align: center;
+  #P1jens, #P2jens {
+    display: none;
+  }
+}
+
+@media screen and (min-width:$mediumscherm) {
+  @include opmaak(yellow,24px);
+
+}
+
+@media screen and (min-width:$largescherm) {
+  @include opmaak(green,24px);
+  #container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+
+}
+
+
+#headafb2 {
+
+  max-width: 100%;
+  margin: auto;
+}
+
+article {
+
+
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+
+h1,h2,h3,h4 {
+  font-family: $headersfont;
+  font-size: $fontgroote;
+}
+p {
+  font-family: $pfont;
+
+}
+
+
+#headafb {
+  max-width: 100%;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: $basiskleur;
+  height: 35px;
+
+
+}
+
+
+#nr2 {
+  margin: 20px;
+  border-radius: 5px 5px 5px 5px ;
+
+}
+
+
+#nr1 {
+  margin: 20px;
+  border-radius: 5px 5px 5px 5px ;
+
+}
+
 
 
 

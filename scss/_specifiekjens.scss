@@ -11,7 +11,6 @@ figure {
   margin-bottom: 1px;
 
 }
-
 .figure-caption {
   color: $basiskleur;
   font-size: 20px;
@@ -20,9 +19,7 @@ figure {
 
 .imggrootte {
   max-width: 100%;
-  height: auto;
-
-
+  height: 250px;
 }
 #P2jens {
   width: 200px;
@@ -95,35 +92,32 @@ figure {
 
 #animatie {
   background-color: inherit;
-  background-image: url(../public_html/Afbeeldingen/animatie.PNG);
   background-repeat: repeat-x;
   animation-name: verkleuring;
-  animation-duration: 4s;
-
+  animation-duration: 5s ;
   overflow: hidden;
   font-size: 25px;
-
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
   @keyframes verkleuring {
-    0% {color: $basiskleur;}
+    0% {color: $basiskleur;
+      transform: translateX(0%);}
     25% {
-      color: yellowgreen;}
+      color: yellowgreen;
+      transform: translateX(25%);}
     50% {
-     color:  greenyellow;}
+     color:  greenyellow;
+      transform: translateX(50%);}
     75% {
-      color: lightgoldenrodyellow;}
-    100% {color:$basiskleur2;}
+      color: lightgoldenrodyellow;
+      transform: translateX(75%);}
+    100% {color:$basiskleur2;
+      transform: translateX(100%);}
+
+
 
   }
-
-  @keyframes glijden {
-    from {
-      transform: translateX(-40%);
-    }
-
-
-    to {
-      transform: translateX(140%);
-    }
 
   }
   .geheel {
@@ -133,4 +127,3 @@ figure {
     animation-timing-function: ease-in;
     animation-direction: alternate;
   }
-}
