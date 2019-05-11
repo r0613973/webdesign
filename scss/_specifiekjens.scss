@@ -6,6 +6,12 @@
   @include opmaakcardspagina2;
 }
 
+.nadruk {
+  border: 3px solid $basiskleur;
+  box-shadow: 0px 2px 2px 2px grey;
+
+}
+
 figure {
   padding-bottom: 0px;
   margin-bottom: 1px;
@@ -81,6 +87,7 @@ figure {
 .kleuren {
 
   border: 1px solid $basiskleur;
+  border-radius: 1 1 1 1 $basiskleur2;
 
   &:link {
     color: black !important;
