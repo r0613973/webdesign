@@ -32,23 +32,24 @@
 }
 
 .landschap {
-  background-image: url(../Afbeeldingen/Achtergrond.png);
+  background-image: url(../Afbeeldingen/achtergrond.png);
   background-repeat: repeat-x;
   height: 150px;
   width: 175px;
   position: absolute;
   top: 155px;
   left: 165px;
+  @keyframes beweeg {
+    from {
+      background-position: left;
+    }
+    to {
+      background-position: right;
+    }
+  }
 }
 
-@keyframes beweeg {
-  from {
-    background-position: left;
-  }
-  to {
-    background-position: right;
-  }
-}
+
 
 .bewegend {
   animation-name: beweeg;
