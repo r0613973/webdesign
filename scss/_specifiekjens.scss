@@ -1,7 +1,6 @@
 @import "mixins";
 @import "huisstijl";
 
-
 .cardsconsoles {
   @include opmaakcardspagina2;
 }
@@ -11,6 +10,7 @@
   box-shadow: 0px 2px 2px 2px grey;
 
 }
+
 
 figure {
   padding-bottom: 0px;
